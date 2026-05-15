@@ -1,7 +1,7 @@
 import { NewMessage } from 'telegram/events/index.js';
 
 function messageHandler(client) {
-	const chats = JSON.parse(process.env.CHATS);
+	const chats = JSON.parse(process.env.WATCH_CHATS);
 
 	client.addEventHandler(
 		async (event) => {

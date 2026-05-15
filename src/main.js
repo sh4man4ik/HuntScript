@@ -12,7 +12,6 @@ async function setup() {
 
 	const phoneNumber = String(process.env.PHONE_NUMBER);
 	const password = String(process.env.PASSWORD);
-	const chatName = String(process.env.CHAT_NAME);
 
 	const session = String(process.env.SESSION);
 	const stringSession = new StringSession(session);
