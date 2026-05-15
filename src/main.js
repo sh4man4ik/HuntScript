@@ -2,12 +2,14 @@ import { TelegramClient } from 'telegram';
 import { StringSession } from 'telegram/sessions/index.js';
 import input from 'input';
 import dotenv from 'dotenv';
+import { messageHandler } from './handlers/messageHandler.js';
 
 dotenv.config();
 
 async function setup() {
 	const apiId = Number(process.env.API_ID);
 	const apiHash = String(process.env.API_HASH);
+
 	const phoneNumber = String(process.env.PHONE_NUMBER);
 	const password = String(process.env.PASSWORD);
 	const chatName = String(process.env.CHAT_NAME);
@@ -26,11 +28,12 @@ async function setup() {
 		onError: (error) => console.log(error)
 	});
 
+	messageHandler(client);
+
 	console.log('Connected!');
 
-	console.log(client.session.save());
-
-	await client.sendMessage(chatName, { message: 'Hello!' });
+	if (!session) {
+		console.log('Copy the code: ' + client.session.save());
+	}
 }
-
 setup();
