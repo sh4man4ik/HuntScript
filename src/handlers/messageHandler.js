@@ -20,7 +20,7 @@ function messageHandler(client) {
 				}
 			}
 		},
-		new NewMessage({ chats: chats, incoming: true })
+		new NewMessage({ chats: chats })
 	);
 }
 
