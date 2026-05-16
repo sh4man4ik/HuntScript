@@ -4,6 +4,8 @@ async function messageSender(client, message, link) {
 	const fullMessage = `${message}\n\n ${link}`;
 
 	await client.sendMessage(targetChat, { message: fullMessage });
+
+	console.log('Message successfully sent!');
 }
 
 export { messageSender };
