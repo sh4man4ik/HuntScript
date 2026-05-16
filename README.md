@@ -48,9 +48,14 @@ npm install
 For example:
 
 ```
-API_ID="12345678" API_HASH="dj43jldf3mdjm34udh43nd3j3nd3ukji" PHONE_NUMBER="+123 45678912" PASSWORD="jskfdsm723dewf"
-TARGET_CHAT="target_chat" WATCH_CHATS=["chat_number_one", "chat_number_two", "chat_number_three"] KEYWORDS=["one",
-"two", "three"] SESSION="CSKKSDCJLUERFref8u4efmejimwlulKI4F38IDJW8JMsdjnhhh47h7d373dsc"
+API_ID="12345678"
+API_HASH="dj43jldf3mdjm34udh43nd3j3nd3ukji"
+PHONE_NUMBER="+123 45678912"
+PASSWORD="jskfdsm723dewf"
+TARGET_CHAT="target_chat"
+WATCH_CHATS=["chat_number_one", "chat_number_two", "chat_number_three"]
+KEYWORDS=["one", "two", "three"]
+SESSION="CSKKSDCJLUERFref8u4efmejimwlulKI4F38IDJW8JMsdjnhhh47h7d373dsc"
 ```
 
 5. Run the script:
