@@ -13,6 +13,8 @@ async function setup() {
 	const phoneNumber = String(process.env.PHONE_NUMBER);
 	const password = String(process.env.PASSWORD);
 
+	const keywords = JSON.parse(process.env.KEYWORDS);
+
 	const session = String(process.env.SESSION);
 	const stringSession = new StringSession(session);
 
@@ -27,7 +29,7 @@ async function setup() {
 		onError: (error) => console.log(error)
 	});
 
-	messageHandler(client);
+	messageHandler(client, keywords);
 
 	console.log('Connected!');
 
