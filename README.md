@@ -29,21 +29,21 @@ npm install
 
 4. Create a .env file in the root directory:
 
-`API_ID — Copy from https://my.telegram.org`
+- `API_ID — Copy from https://my.telegram.org`
 
-`API_HASH — Copy from https://my.telegram.org`
+- `API_HASH — Copy from https://my.telegram.org`
 
-`PHONE_NUMBER — Telegram phone number`
+- `PHONE_NUMBER — Telegram phone number`
 
-`PASSWORD — Telegram account password`
+- `PASSWORD — Telegram account password`
 
-`TARGET_CHAT — Chat where your messages will go`
+- `TARGET_CHAT — Chat where your messages will go`
 
-`WATCH_CHATS — Chats where messages will come from`
+- `WATCH_CHATS — Chats where messages will come from`
 
-`KEYWORDS — Keywords for filtering messages`
+- `KEYWORDS — Keywords for filtering messages`
 
-`SESSION — When you run the script for the first time, you'll need to log in to your Telegram account. Then, copy the code from the console and paste it here. This way, you won't have to log in every time`
+- `SESSION — When you run the script for the first time, you'll need to log in to your Telegram account. Then, copy the code from the console and paste it here. This way, you won't have to log in every time`
 
 For example:
 
