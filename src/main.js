@@ -3,6 +3,7 @@ import { StringSession } from 'telegram/sessions/index.js';
 import input from 'input';
 import dotenv from 'dotenv';
 import { messageHandler } from './handlers/messageHandler.js';
+import express from 'express'; //! ONLY FOR RENDER (https://render.com)
 
 dotenv.config();
 
@@ -36,3 +37,15 @@ async function setup() {
 	}
 }
 setup();
+
+//! ONLY FOR RENDER (https://render.com)
+const app = express();
+const port = process.env.PORT || 5000;
+
+app.get('/', (req, res) => {
+	res.send('Express launched');
+});
+
+app.listen(port, () => {
+	console.log('Express launched');
+});
