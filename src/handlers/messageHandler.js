@@ -1,8 +1,10 @@
 import { NewMessage } from 'telegram/events/index.js';
+import { messageSender } from './messageSender.js';
 import { getMessageUrl } from '../helpers/getMessageUrl.js';
 
-function messageHandler(client, keywords) {
+function messageHandler(client) {
 	const chats = JSON.parse(process.env.WATCH_CHATS);
+	const keywords = JSON.parse(process.env.KEYWORDS);
 
 	client.addEventHandler(
 		async (event) => {
@@ -14,7 +16,7 @@ function messageHandler(client, keywords) {
 
 				if (messageCopy.includes(keyword)) {
 					const link = await getMessageUrl(event);
-					console.log(link);
+					await messageSender(client, message, link);
 				}
 			}
 		},
