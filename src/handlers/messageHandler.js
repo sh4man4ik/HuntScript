@@ -23,7 +23,7 @@ function messageHandler(client) {
 				}
 			}
 		},
-		new NewMessage({ chats: chats })
+		new NewMessage({ chats: chats, incoming: true })
 	);
 }
 
