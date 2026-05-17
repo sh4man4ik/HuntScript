@@ -16,7 +16,10 @@ function messageHandler(client) {
 
 				if (messageCopy.includes(keyword)) {
 					const link = await getMessageUrl(event);
+
 					await messageSender(client, message, link);
+
+					return;
 				}
 			}
 		},
