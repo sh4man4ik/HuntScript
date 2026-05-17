@@ -37,7 +37,7 @@ npm install
 
 - `PASSWORD — Telegram account password`
 
-- `TARGET_CHAT — Chat where your messages will go`
+- `TARGET_CHAT — Chat where your messages will go. Or type “me” to get them sent directly to your Saved Messages`
 
 - `WATCH_CHATS — Chats where messages will come from`
 
