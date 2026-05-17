@@ -11,19 +11,19 @@ time.
 
 1. Clone the repository:
 
-```
+```bash
 git clone https://github.com/sh4man4ik/HuntScript.git
 ```
 
 2. Go to the directory:
 
-```
+```bash
 cd HuntScript
 ```
 
 3. Download the dependencies:
 
-```
+```bash
 npm install
 ```
 
@@ -47,7 +47,7 @@ npm install
 
 For example:
 
-```
+```bash
 API_ID="12345678"
 API_HASH="dj43jldf3mdjm34udh43nd3j3nd3ukji"
 PHONE_NUMBER="+123 45678912"
@@ -60,7 +60,7 @@ SESSION="CSKKSDCJLUERFref8u4efmejimwlulKI4F38IDJW8JMsdjnhhh47h7d373dsc"
 
 5. Run the script:
 
-```
+```bash
 npm run script
 ```
 
